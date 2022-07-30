@@ -1,0 +1,225 @@
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Beethemesdesign" name="author" />
+
+    <link rel="shortcut icon" href="../static/images/favicon(1).ico">
+
+    <link href="../static/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
+    <link href="../static/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="left-side-menu">
+            <div class="slimscroll-menu">
+                <a href="index.html" class="logo">
+
+
+                </a>
+                <!-- Logo content end -->
+                <!-------------------------------------->
+                <!-------------------------------------->
+                <!-- User details start -->
+                <div class="sidenav-user">
+                    <h4 class="mb-1 mt-0">张磊磊</h4>
+                    <p class="mb-2">ZhangLeiLei</p>
+                    <img src="../static/images/logo.jpg" alt="" class="rounded-circle">
+                </div>
+
+                <ul class="metismenu side-nav">
+                    <li class="menu-caption menu-item">爬虫搜索管理</li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="feather icon-home"></i>
+                            <span> 爬虫管理首页 </span>
+                            <span class="menu-sub-icon"></span>
+                        </a>
+                        <ul class="menu-level-second collapse" aria-expanded="false">
+                            <li><a href="index.html">网址爬取</a></li>
+                            <li><a href="index.html">内容呈现</a></li>
+                            <li><a href="#">暂无数据</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="feather icon-list"></i>
+                            <span> 数据可视化 </span>
+                            <span class="menu-sub-icon"></span>
+                        </a>
+                        <ul class="menu-level-second collapse" aria-expanded="false">
+                            <li><a href="#">数据</a></li>
+                            <li><a href="#">数据</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="feather icon-user"></i>
+                            <span> 个人用户信息 </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="content-page">
+            <div class="content">
+
+                <div class="navbar-custom">
+                    <ul class="list-unstyled topbar-right-menu float-right mb-0">
+                        <li class="dropdown notification-list topbar-dropdown">
+                            <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <i class="feather icon-mail noti-icon"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated topbar-dropdown-menu">
+                                <a href="javascript:" class="dropdown-item"><i class="feather icon-map-pin text-muted"></i> &nbsp; 功能</a>
+                                <a href="javascript:" class="dropdown-item"><i class="feather icon-upload-cloud text-muted"></i> &nbsp; 功能</a>
+                                <a href="javascript:" class="dropdown-item"><i class="feather icon-activity text-muted"></i> &nbsp; 功能</a>
+                                <a href="javascript:" class="dropdown-item"><i class="feather icon-life-buoy text-muted"></i> &nbsp; 功能</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="javascript:" class="dropdown-item"><i class="feather icon-github text-muted"></i> &nbsp; 下载</a>
+                                <a href="javascript:" class="dropdown-item"><i class="feather icon-slack text-muted"></i> &nbsp; 付款</a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <i class="feather icon-bell noti-icon"></i>
+                                <span class="noti-icon-badge"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated dropdown-lg">
+                                <div class="dropdown-item noti-title">
+                                    <h5 class="m-0">
+                                        <span class="float-right">
+                                            <a href="javascript: void(0);" class="text-dark">
+                                                <small>清除</small>
+                                            </a>
+                                        </span>最新消息 <span class="badge badge-danger badge-pill">5</span>
+                                    </h5>
+                                </div>
+                                <div class="slimscroll" style="max-height: 230px;">
+                                    <!-- item start-->
+                                    <a href="#" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-primary">
+                                            <i class="mdi mdi-comment-account-outline"></i>
+                                        </div>
+                                        <p class="notify-details">这是一条消息
+                                            <small class="text-muted">一分钟前</small>
+                                        </p>
+                                    </a>
+
+                                    </a>
+
+
+                                </div>
+                                <a href="#" class="dropdown-item text-center text-primary notify-item notify-all">
+                                    全部已读
+                                </a>
+                            </div>
+                        </li>
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle nav-user arrow-none mx-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <span class="account-user-avatar">
+                                    <img src="../static/images/logo.jpg" alt="个人头像" class="rounded-circle">
+                                </span>
+                                <span>
+                                    <p class="account-user-name" >{{username}}</p>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
+                                <a href="javascript:" class="dropdown-item"><i class="feather icon-user text-muted"></i> 个人主页</a>
+                                <a href="setting/" {{username}} class="dropdown-item"><i class="feather icon-settings text-muted"></i> 设置</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="login.html" class="dropdown-item"><i class="feather icon-power text-danger"></i> 退出</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <button class="button-menu-mobile open-left">
+                        <i class="feather icon-menu"></i>
+                    </button>
+                    <!-- Minimenu and mobille toggle button end -->
+
+
+                    <div class="header-search">
+                        <form>
+                            <div class="input-group">
+                                <span class="feather icon-search"></span>
+                                <input type="text" class="form-control" placeholder="请输入要爬取的网址">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Left side topbar content end -->
+                    <!------------------------------------->
+                </div>
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href=""><i class="feather icon-home"></i></a></li>
+                                        <li class="breadcrumb-item active">首页</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                        <div class="col-xl-8 col-md-12">
+                            <div class="card overflow-hidden">
+                                <div class="card-body" style="height: 50vh">
+                                    <h1>
+                                        爬取到的数据
+                                    </h1>
+
+                                    经过多年的不限努力
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                <!-- container -->
+
+
+</div>
+
+                </div>
+</div>
+    <!-- Required js -->
+    <script src="../static/js/app.js"></script>
+
+
+    <!-- third party js -->
+    <script src="../static/js/Chart.bundle.min.js"></script>
+    <script src="../static/js/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="../static/js/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- third party js ends -->
+
+    <!-- third party:js -->
+    <script src="../static/js/apexcharts.min.js"></script>
+
+    <!-- demo app -->
+    <script src="../static/js/demo.dashboard.js"></script>
+
+</body>
+
+</html>
