@@ -23,12 +23,15 @@ from django.urls import path
 from User import views
 
 urlpatterns = [
-    #    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', views.login, name='login'),
     path('index/', views.index, name='index'),
     path('register/', views.register, name='register'),
-    path('setting/',views.setting,name='setting')
+    path('setting/',views.setting,name='setting'),
+    path('personal/',views.personal_homepage,name='personal_homepage'),
+    path('list_dep_old/',views.list_dep_old),
 
-
+    path('add_dep_old/',views.add_dep_old),
+    path('del_dep_old/<int:dep_id>/',views.del_dep_old),
 
 ]

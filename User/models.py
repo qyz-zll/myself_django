@@ -13,3 +13,7 @@ class WangUser(models.Model):
 
     def __str__(self):
         return '%s %s' % (self.username, self.password)
+
+class department(models.Model):
+    dep_name=models.CharField(max_length=32,verbose_name='部门名称',unique=True,blank=False)
+    dep_script=models.CharField(max_length=60,verbose_name='备注说明',null=True)

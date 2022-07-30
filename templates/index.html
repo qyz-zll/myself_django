@@ -34,8 +34,8 @@
                 <!-------------------------------------->
                 <!-- User details start -->
                 <div class="sidenav-user">
-                    <h4 class="mb-1 mt-0">张磊磊</h4>
-                    <p class="mb-2">ZhangLeiLei</p>
+                    <h4 class="mb-1 mt-0">爬虫后台</h4>
+                    <p class="mb-2">{{username}}</p>
                     <img src="../static/images/logo.jpg" alt="" class="rounded-circle">
                 </div>
 
@@ -65,7 +65,7 @@
                         </ul>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link">
+                        <a href="/personal" class="menu-link">
                             <i class="feather icon-user"></i>
                             <span> 个人用户信息 </span>
                         </a>
@@ -139,8 +139,8 @@
                                 </span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
-                                <a href="javascript:" class="dropdown-item"><i class="feather icon-user text-muted"></i> 个人主页</a>
-                                <a href="setting/" {{username}} class="dropdown-item"><i class="feather icon-settings text-muted"></i> 设置</a>
+                                <a href="/setting" {{username}}  class="dropdown-item"><i class="feather icon-user text-muted"></i> 个人主页</a>
+                                <a href="" class="dropdown-item"><i class="feather icon-settings text-muted"></i> 设置</a>
                                 <div class="dropdown-divider"></div>
                                 <a href="login.html" class="dropdown-item"><i class="feather icon-power text-danger"></i> 退出</a>
                             </div>
